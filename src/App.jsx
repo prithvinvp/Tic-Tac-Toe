@@ -1,22 +1,11 @@
 import { useState } from "react";
-import reactLogo from "./assets/react.svg";
 import "./App.css";
+import Header from "./Components/Header/header";
 
 function App() {
-  const [count, setCount] = useState(0);
-
   return (
-    <div className="rounded-xl border-l-purple-800 text-white flex">
-      <button>X</button>
-      <button>X</button>
-      <button>X</button>
-      <button>X</button>
-      <button>X</button>
-      <button>X</button>
-      <button>X</button>
-      <button>X</button>
-      <button>X</button>
-      Hello world
+    <div className="border-8 border-black text-center my-48 mx-6">
+      <Header />
     </div>
   );
 }
