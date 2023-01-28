@@ -1,22 +1,17 @@
 import { useState } from "react";
-import reactLogo from "./assets/react.svg";
 import "./App.css";
+import Header from "./Components/Header/header";
+import Rows from "./Components/Rows/rows";
+import Display from "./Components/Display/display";
 
 function App() {
-  const [count, setCount] = useState(0);
-
   return (
-    <div className="rounded-xl border-l-purple-800 text-white flex">
-      <button>X</button>
-      <button>X</button>
-      <button>X</button>
-      <button>X</button>
-      <button>X</button>
-      <button>X</button>
-      <button>X</button>
-      <button>X</button>
-      <button>X</button>
-      Hello world
+    <div className="border-8 border-black text-center my-48 mx-6 rounded-2xl xxl:mx-96 xl:mx-80 lg:mx-68">
+      <Header />
+      <Rows value="1" />
+      <Rows value="1" />
+      <Rows value="1" />
+      <Display />
     </div>
   );
 }
